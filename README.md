@@ -1,5 +1,5 @@
 # Logstash Config to import CUCM CDR/CMR
-This is the config file I've used to import the Cisco Callmanager CDR and CMR in Elasticsearch with Logstash
+This is the setup I've used to import the Cisco Callmanager CDR and CMR in Elasticsearch with Logstash
 ## Installation
 1. Copy the config file in /etc/logstash/conf.d/ and change the folder in cucm.conf
 2. Add the Elasticsearch template from the json file in the folder elasticsearch

@@ -1,0 +1,100 @@
+[
+  {
+    "_id": "CUCM-Top-20-Dashboard-7-days",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM - Top 20 Dashboard - 7 days",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"CUCM-Call-per-seconds\",\"row\":4,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"CUCM-Top-20-duration-per-called-number\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"CUCM-Top-20-duration-per-calling-number\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"CUCM-Top-20-duration-per-destination-device\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"CUCM-Top-20-duration-per-calling-device\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"callingPartyNumber\",\"originalCalledPartyNumber\",\"finalCalledPartyNumber\",\"duration\",\"origDeviceName\",\"destDeviceName\"],\"id\":\"CUCM-All-Call\",\"row\":6,\"size_x\":12,\"size_y\":19,\"sort\":[\"duration\",\"desc\"],\"type\":\"search\"}]",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-7d",
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-Top-20-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM - Top 20 Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":10,\"id\":\"CUCM-Top-20-duration-per-called-number\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"CUCM-Top-20-duration-per-calling-number\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"CUCM-Top-20-duration-per-destination-device\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"CUCM-Top-20-duration-per-calling-device\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"callingPartyNumber\",\"originalCalledPartyNumber\",\"finalCalledPartyNumber\",\"duration\",\"origDeviceName\",\"destDeviceName\"],\"id\":\"CUCM-All-Call\",\"row\":7,\"size_x\":12,\"size_y\":4,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":10,\"id\":\"CUCM-CDR-Call-per-minutes\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"CUCM-CDR-Top-20-Call-per-Calling-Number\",\"row\":4,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"CUCM-CDR-Zero-Duration-Calls\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"CUCM-CDR-Total-Call\",\"row\":4,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"}]",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-CMR-Troubleshooting",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM CMR - Troubleshooting",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"CUCM-CMR-Average-latency-per-devices\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"CUCM-CMR-Average-latency-per-directory-number\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":5,\"col\":1,\"row\":5},{\"id\":\"CUCM-CMR-Packet-lost-per-devices\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":1},{\"id\":\"CUCM-CMR-Packet-Lost-per-directory-number\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":5,\"col\":7,\"row\":5}]",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-WAN-Calls",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM - WAN Calls",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"CUCM-CDR-OUTBOUND-PSTN-per-PRI\",\"row\":3,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":4,\"id\":\"CUCM-CDR-INBOUND-PSTN-per-PRI\",\"row\":3,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"CUCM-CDR-Total-OUTBOUND-PSTN-CALLS\",\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"CUCM-CDR-Gatekeeper-Calls\",\"row\":3,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":10,\"id\":\"CUCM-CDR-CCX-HQ-Calls\",\"row\":3,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"CUCM-CDR-Total-Gatekeeper-Calls\",\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"CUCM-CDR-Total-INBOUND-PSTN-CALLS\",\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"CUCM-CDR-Total-CCX-HQ-Calls\",\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"callingPartyNumber\",\"originalCalledPartyNumber\",\"finalCalledPartyNumber\",\"duration\",\"origDeviceName\",\"destDeviceName\"],\"id\":\"CUCM-All-Call\",\"row\":7,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"}]",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-Reception-HQ",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM - Reception HQ",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"CUCM-CDR-Reception-HQ-INBOUND-Calls\",\"row\":3,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"CUCM-CDR-Reception-HQ-Total-Calls\",\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"columns\":[\"callingPartyNumber\",\"originalCalledPartyNumber\",\"finalCalledPartyNumber\",\"duration\"],\"id\":\"CUCM-CDR-Reception-HQ-Total-Calls\",\"row\":3,\"size_x\":8,\"size_y\":6,\"sort\":[\"duration\",\"desc\"],\"type\":\"search\"},{\"id\":\"CUCM-CDR-Reception-HQ-Calls-slash-min\",\"type\":\"visualization\",\"size_x\":9,\"size_y\":2,\"col\":4,\"row\":1}]",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-CMR-Troubleshooting-Voice-Quality",
+    "_type": "dashboard",
+    "_source": {
+      "title": "CUCM CMR - Troubleshooting Voice Quality",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"CUCM-CMR-Voice-Quality-MOS-lower-than-4\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"CUCM-CMR-Voice-Quality-Severely-Conceal-Secs-more-than-1\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"CUCM-CMR-Voice-Quality-All-Records\",\"type\":\"search\",\"size_x\":8,\"size_y\":13,\"col\":1,\"row\":7,\"columns\":[\"deviceName\",\"directoryNum\",\"cucm_clustername\",\"VQMetrics_CCR\",\"VQMetrics_CS\",\"VQMetrics_ICR\",\"VQMetrics_ICRmx\",\"VQMetrics_MLQK\",\"VQMetrics_MLQKav\",\"VQMetrics_MLQKmn\",\"VQMetrics_MLQKmx\",\"VQMetrics_MLQKvr\",\"VQMetrics_SCS\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"id\":\"CUCM-CMR-Voice-Quality-Average-MOS\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"CUCM-CDR-Top-5-Codec-used\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":1}]",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  }
+]

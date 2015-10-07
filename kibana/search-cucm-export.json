@@ -1,0 +1,108 @@
+[
+  {
+    "_id": "CUCM-CDR-Reception-HQ-Total-Calls",
+    "_type": "search",
+    "_source": {
+      "title": "CUCM CDR - Reception HQ - Total Calls",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "callingPartyNumber",
+        "originalCalledPartyNumber",
+        "finalCalledPartyNumber",
+        "duration"
+      ],
+      "sort": [
+        "duration",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"cucm-cdr-*\",\"query\":{\"query_string\":{\"query\":\"originalCalledPartyNumber:9277?? OR originalCalledPartyNumber:926565\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-All-Call",
+    "_type": "search",
+    "_source": {
+      "title": "CUCM CDR - All Call",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "callingPartyNumber",
+        "originalCalledPartyNumber",
+        "finalCalledPartyNumber",
+        "duration",
+        "origDeviceName",
+        "destDeviceName"
+      ],
+      "sort": [
+        "duration",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"cucm-cdr-*\",\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"fragment_size\": 2147483647\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-CMR-Voice-Quality-All-Records",
+    "_type": "search",
+    "_source": {
+      "title": "CUCM CMR - Voice Quality All Records",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "deviceName",
+        "directoryNum",
+        "cucm_clustername",
+        "VQMetrics_CCR",
+        "VQMetrics_CS",
+        "VQMetrics_ICR",
+        "VQMetrics_ICRmx",
+        "VQMetrics_MLQK",
+        "VQMetrics_MLQKav",
+        "VQMetrics_MLQKmn",
+        "VQMetrics_MLQKmx",
+        "VQMetrics_MLQKvr",
+        "VQMetrics_SCS"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"cucm-cmr-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"VQMetrics_MLQKav: [0 TO *]\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "CUCM-Reception-Outbound-Calls",
+    "_type": "search",
+    "_source": {
+      "title": "CUCM Reception Outbound Calls",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "dateTimeConnect_formatted",
+        "callingPartyNumber",
+        "duration",
+        "originalCalledPartyNumber",
+        "finalCalledPartyNumber",
+        "lastRedirectRedirectReason",
+        "lastRedirectDn"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"cucm-cdr-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"callingPartyNumber:926565 OR callingPartyNumber:9277??\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+      }
+    }
+  }
+]

@@ -7,7 +7,7 @@ This is the config file I've used to import the Cisco Callmanager CDR and CMR in
 ## Usage
 You need to configure the export of CDR/CMR on your Callmanager to the server where logstash is running.
 If you have multiple CUCM cluster you can configure logstash to add a tag, just create a folder for each cluster and add new file{} input like this:
-
+```
 file {
     path => "/folder with CMR files Cluster 1/cdr*"
     type => "cucm-cdr"
@@ -32,7 +32,7 @@ file {
 	start_position => "beginning"
 	add_field => { "cucm_clustername" => "CUCM_Cluster_2" }
 }
-		
+```		
 ## License
 Copyright (c) 2015 Damien Hauser
 

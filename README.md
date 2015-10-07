@@ -4,6 +4,7 @@ This is the config file I've used to import the Cisco Callmanager CDR and CMR in
 1. Copy the config file in /etc/logstash/conf.d/ and change the folder in cucm.conf
 2. Add the Elasticsearch template from the json file in the folder elasticsearch
 3. Import the kibana file from the folder kibana (work only with Kibana 4.1)
+
 ## Usage
 You need to configure the export of CDR/CMR on your Callmanager to the server where logstash is running.
 If you have multiple CUCM cluster you can configure logstash to add a tag, just create a folder for each cluster and add new file{} input like this:

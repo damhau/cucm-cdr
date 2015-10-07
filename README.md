@@ -1,3 +1,28 @@
+<snippet>
+  <content><![CDATA[
+# ${1:Logstash Config to import CUCM CDR/CMR}
+TODO: Write a project description
+## Installation
+Copy the config file in /etc/logstash/conf.d/ and change the folder in cucm.conf
+## Usage
+TODO: Write usage instructions
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+## History
+TODO: Write history
+## Credits
+TODO: Write credits
+## License
+TODO: Write license
+]]></content>
+  <tabTrigger>readme</tabTrigger>
+</snippet>
+
+
 Logstash config to import CUCM CDR/CMR
 
 Replace the fiel path and add_field information with the name of your cucm cluster.

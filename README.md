@@ -1,6 +1,4 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Logstash Config to import CUCM CDR/CMR}
+# Logstash Config to import CUCM CDR/CMR
 TODO: Write a project description
 ## Installation
 Copy the config file in /etc/logstash/conf.d/ and change the folder in cucm.conf
